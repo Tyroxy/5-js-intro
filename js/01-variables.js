@@ -52,8 +52,8 @@ console.log('Pinigineje yra:' , pinigine);
 
 console.log('---------------------------------------')
 
-const pirmasZodis = 'Pirmas';
-const antrasZodis = 'zodis';
+const pirmasZodis = 'Senis';
+const antrasZodis = 'Besmegenis';
 
 const sakinys = pirmasZodis + ' ' + antrasZodis + '.'
 console.log(1, pirmasZodis);
@@ -89,9 +89,29 @@ const aktoriausVardas = 'Chuck';
 const aktoriausPavarde = 'Norris';
 const filmoPavadinimas = 'Volkeris. Teksaso reindzeris';
 
-const filmas1 = 'Pagrindinis aktorius yra: ' + aktoriausVardas + ' ' + aktoriausPavarde;
-console.log(filmas1);
+const filmas1 = 'Pagrindinis aktorius yra ' + aktoriausVardas + ' ' + aktoriausPavarde + ' filme "' + filmoPavadinimas + '".';
+console.log(1, filmas1);
+
+const filmas2 = "Pagrindinis aktorius yra " + aktoriausVardas + " " + aktoriausPavarde + " filme \"" + filmoPavadinimas + "\".";
+console.log(2, filmas2);
+
+const filmas3 = "Pagrindinis aktorius yra " + aktoriausVardas + " " + aktoriausPavarde + ' filme "' + filmoPavadinimas + '".';
+console.log(3, filmas3);
+
+const filmas4 = `Pagrindinis aktorius yra ${aktoriausVardas} ${aktoriausPavarde} filme "${filmoPavadinimas}".`
+console.log(4, filmas4);
+
+console.log('---------------------------------------')
+
+// Viengubos ('), dvigubos (") ir backtick'as (`).
+const kabuciuCombo1 = 'Viengubos (\'), dvigubos (") ir backtick\'as (`).';
+const kabuciuCombo2 = "Viengubos ('), dvigubos (\") ir backtick'as (`).";
+const kabuciuCombo3 = `Viengubos ('), dvigubos (") ir backtick'as (\`).`;
+console.log(1, kabuciuCombo1);
+console.log(2, kabuciuCombo2);
+console.log(3, kabuciuCombo3);
 
 
+('---------------------------------------')
 
 
