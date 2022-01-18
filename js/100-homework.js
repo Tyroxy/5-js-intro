@@ -11,12 +11,13 @@ console.log(`Pazymiai: ${pazymiai[0]}, ${pazymiai[1]}, ${pazymiai[2]}, ${pazymia
 const sum = pazymiai[0] + pazymiai[1] + pazymiai[2] + pazymiai[3] + pazymiai[4];
 const vidurkis = sum / 5;
 
-console.log('Pazymiu suma: ' + (sum) + '.');
+console.log('Pazymiu suma: ' + sum + '.');
 
 console.log('Pazymiu kiekis: ' + pazymiai.length + '.')
 
-console.log('Pazymiu vidurkis: ' + vidurkis + '.');
-console.log('Pazymiu vidurkis: ' + sum/5 + '.');
+console.log(1,'Pazymiu vidurkis: ' + vidurkis + '.');
+console.log(2, 'Pazymiu vidurkis: ' + sum/5 + '.');
+console.log(3, 'Pazymiu vidurkis: ' + sum/(pazymiai.length) + '.');
 
 console.log('---------------------------------------');
 
