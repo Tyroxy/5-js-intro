@@ -26,8 +26,8 @@ console.log('Reikia nupirkti:', maistoSarasas[4]);
 console.log('---------------------------------------');
 
 // Pazymiai: 10, 2, 8, 6, 4.
-// Pazymiai: 30.
-// Pazymiai: 5.
+// Pazymiu suma: 30.
+// Pazymiu kiekis: 5.
 // Pazymiu vidurkis: 6.
 
 console.log('---------------------------------------');
