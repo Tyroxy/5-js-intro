@@ -55,13 +55,43 @@ console.log('---------------------------------------')
 const pirmasZodis = 'Pirmas';
 const antrasZodis = 'zodis';
 
-const sakinys = pirmasZodis + ' ' + antrasZodis
+const sakinys = pirmasZodis + ' ' + antrasZodis + '.'
 console.log(1, pirmasZodis);
 console.log(2, antrasZodis);
 console.log(3, sakinys);
 
 
+console.log('---------------------------------------')
+
+const kabutes1 = "It's my name"
+console.log(kabutes1);
+
+const kabutes2 = 'Tai vadinasi "Cepelinas" ar kazkap panasiai';
+console.log(kabutes2);
+
+const kabutes12 = 'Cia yra vienguba (\'), o cia yra dvigubos (") kabutes';
+const kabutes21 = "Cia yra vienguba ('), o cia yra dvigubos (\") kabutes";
+console.log(kabutes12)
+console.log(kabutes21)
+
+
+const kabutes120 = 'Cia yra vienguba (\'), o cia yra dvigubos (\") kabutes';
+const kabutes210 = "Cia yra vienguba (\'), o cia yra dvigubos (\") kabutes";
+console.log(kabutes120)
+console.log(kabutes210)
 
 console.log('---------------------------------------')
+
+
+// Pagrindinis aktorius yra Chuck Norris filme "Volkeris. Teksaso reindzeris"
+
+const aktoriausVardas = 'Chuck';
+const aktoriausPavarde = 'Norris';
+const filmoPavadinimas = 'Volkeris. Teksaso reindzeris';
+
+const filmas1 = 'Pagrindinis aktorius yra: ' + aktoriausVardas + ' ' + aktoriausPavarde;
+console.log(filmas1);
+
+
 
 
