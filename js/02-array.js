@@ -43,6 +43,6 @@ console.log(asmenys);
 //Klaseje mokosi 4 asmenys.
 //Mokiniu vardai yra Petras, Ona, Jonas, Maryte.
 
-console.log('---------------------------------------');
+
 
 
