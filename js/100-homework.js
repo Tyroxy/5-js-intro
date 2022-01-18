@@ -16,7 +16,7 @@ console.log('Pazymiu suma: ' + (sum) + '.');
 console.log('Pazymiu kiekis: ' + pazymiai.length + '.')
 
 console.log('Pazymiu vidurkis: ' + vidurkis + '.');
-
+console.log('Pazymiu vidurkis: ' + sum/5 + '.');
 
 console.log('---------------------------------------');
 
