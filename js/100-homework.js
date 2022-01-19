@@ -145,7 +145,10 @@ const tx5 = 'gera';
 const tx6 = 'alu';
 const tx7 = 'gere';
 
+const greita = ['Geri', 'vyrai', 'geroj', 'girioj', 'gera', 'alu', 'gere'];
+
 console.log(`${tx1} ${tx2} ${tx3} ${tx4} ${tx5} ${tx6} ${tx7}.`);
+console.log(`${greita[0]} ${greita[1]} ${greita[2]} ${greita[3]} ${greita[4]} ${greita[5]} ${greita[6]}.`);
 
 console.log('---------------------');
 
@@ -164,3 +167,299 @@ console.log('---------------------');
 console.log(1, `${medis[4]} , ${medis[3]} , ${medis[2]} , ${medis[1]} , ${medis[0]}.`);
 
 console.log(2, medis[4] + ' , ' + medis[3] + ' , ' + medis[2] + ' , ' + medis[1]  + ' , ' + medis[0] + '.');
+
+
+console.log('---------------------------------------');
+
+
+
+
+
+/*
+JavaScript mini užduotys
+
+III. Kintamųjų palyginimas
+
+Lyginant, jei rezultatas tenkina palyginimo sąlygą, tai į console išvesti žodį “Pomidoras”, o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.
+
+1. Tarpusavyje palyginti skaičiaus tipo kintamuosius:
+    a. kuris didesnis
+    b. kuris mažesnis
+    c. ar jie lygūs
+    d. ar jie nelygūs
+    e. kuris didesnis arba lygus
+    f. kuris mažesnis arba lygus
+2. Išvesti teksto tipo kintamųjų ilgius
+3. Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
+    a. kuris didesnis
+    b. kuris mažesnis
+    c. ar jie lygūs
+    d. ar jie nelygūs
+    e. kuris didesnis arba lygus
+    f. kuris mažesnis arba lygus
+4. Išvesti sąrašo tipo kintamųjų ilgius
+5. Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
+    a. kuris didesnis
+    b. kuris mažesnis
+    c. ar jie lygūs
+    d. ar jie nelygūs
+    e. kuris didesnis arba lygus
+    f. kuris mažesnis arba lygus
+
+
+IV.Ciklo for panaudojimas
+
+1. Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+    a. 0 - 0
+    b. 0 - 4
+    c. 0 - 100
+    d. 574 - 815
+    e. -50 - 50
+    f. -70 - 30
+2. panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+    pvz.: “abcdef” -> “fedcba”
+3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
+    a. 0 - 11
+    b. 8 - 31
+    c. -18 - 18
+    d. rezultatą pateikti tokiu formatu:
+        1) Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+        2) Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+        3) Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
+
+*/
+
+
+// III.
+// 1.
+
+const x = 9
+const y = 6
+
+// a.
+if (x > y) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// b.
+if (x < y) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// c.
+if (x === y) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// d.
+if (x !== y) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// e.
+if (x >= y) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// f.
+if (x <= y) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+console.log('------------------------------------------------');
+
+// 2.
+const saule = 'zvaigzde'
+const zeme = 'planeta'
+
+// 3.
+
+// a.
+if (saule.length > zeme.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// b.
+if (saule.length < zeme.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// c.
+if (saule.length === zeme.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// d.
+if (saule.length !== zeme.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// e.
+if (saule.length >= zeme.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// f.
+if (saule.length <= zeme.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+console.log('------------------------------------------------');
+
+// 4.
+const pazym = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const balai = [1, 2, 3, 4, 5, 6];
+
+// 5.
+// a.
+if (pazym.length > balai.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// b.
+if (pazym.length < balai.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// c.
+if (pazym.length === balai.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// d.
+if (pazym.length !== balai.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// e.
+if (pazym.length >= balai.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+// f.
+if (pazym.length <= balai.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta.');
+}
+
+console.log('------------------------------------------------');
+
+// IV.
+// 1.
+
+// a. intervalas 0 - 0
+
+let sum1 = 0;
+for (let i = 0; i <= 0; i++) {
+    sum1 = sum1 + i
+ }
+console.log('Skaiciu suma intervale 0 - 0:', sum1);
+
+// b. intervalas 0 - 4
+
+let sum2 = 0;
+for (let i = 0; i <= 4; i++) {
+    sum2 = sum2 + i
+}
+console.log('Skaiciu suma intervale 0 - 4:', sum2);
+
+// c. intervalas 0-100
+
+let sum3 = 0;
+for (let i = 0; i <= 100; i++) {
+    sum3 = sum3 + i
+}
+console.log('Skaiciu suma intervale 0 - 100:', sum3);
+
+// d. intervalas 574 - 815
+
+let sum4 = 0;
+for (let i = 574; i <= 815; i++) {
+    sum4 = sum4 + i
+}
+console.log('Skaiciu suma intervale 574 - 815:', sum4);
+
+// e. intervalas -50 - 50
+
+let sum5 = 0;
+for (let i = -50; i <= 50; i++) {
+    sum5 = sum5 + i
+}
+console.log('Skaiciu suma intervale -50 - 50:', sum5);
+
+// f. intervalas -70 - 30
+
+let sum6 = 0;
+for (let i = -70; i <= 30; i++) {
+    sum6 = sum6 + i
+}
+console.log('Skaiciu suma intervale -70 - 30:', sum6);
+
+
+console.log('------------------------------------------------');
+
+// 2.
+//pvz.: “abcdef” -> “fedcba”
+
+let zod = 'pomidoras';
+let atv = '' 
+
+for (let i = zod.length - 1; i >= 0; i--) {
+    atv += zod [i];
+}
+console.log(`Zodis "${zod}", o atvirksciai "${atv}"`);
+
+
+console.log('------------------------------------------------');
+
+// 3.
+
+// a. intervalas 0 - 11
+
+
+const num1 = 0;
+const num2 = 11;
+let numb = [];
+
+if (num1 <= num2) {
+  for (let i = num1; i <= num2; i++) {
+    if (i % 3 === 0)
+      numb.push(i);
+  }
+}
+
+console.log(numb.length);
