@@ -18,17 +18,22 @@ console.log('Reikia nupirkti:', 'svogunas');
 
 console.log('---------------------------------------');
 
+console.log('Reikia nupirkti:', maistoSarasas[0]);
 console.log('Reikia nupirkti:', maistoSarasas[1]);
 console.log('Reikia nupirkti:', maistoSarasas[2]);
 console.log('Reikia nupirkti:', maistoSarasas[3]);
-console.log('Reikia nupirkti:', maistoSarasas[4]);
 
 console.log('---------------------------------------');
 
 // Pazymiai: 10, 2, 8, 6, 4.
+console.log(`Pazymiai: ${pazymiai[0]}, ${pazymiai[1]}, ${pazymiai[2]}, ${pazymiai[3]}, ${pazymiai[4]}. `);
 // Pazymiu suma: 30.
+const pazymiuSuma = pazymiai[0] + pazymiai[1] + pazymiai[2] + pazymiai[3] + pazymiai[4];
+console.log(`Pazymiu suma: ${pazymiuSuma}.`);
 // Pazymiu kiekis: 5.
+console.log(`Pazymiu kiekis: ${pazymiai.length}.`)
 // Pazymiu vidurkis: 6.
+console.log(`Pazymiu vidurkis: ${pazymiuSuma / pazymiai.length}.`);
 
 console.log('---------------------------------------');
 
@@ -41,8 +46,8 @@ const asmenys =[asmuo1, asmuo2, asmuo3, asmuo4];
 console.log(asmenys);
 
 //Klaseje mokosi 4 asmenys.
+console.log(`Klaseje mokosi ' + ${asmenys.length} asmenys.`)
 //Mokiniu vardai yra Petras, Ona, Jonas, Maryte.
-
-
+console.log(`Mokiniu vardai yra ${asmenys[0]}, ${asmenys[1]}, ${asmenys[2]}, ${asmenys[3]}.`)
 
 
