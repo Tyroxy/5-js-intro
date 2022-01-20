@@ -463,3 +463,90 @@ if (num1 <= num2) {
 }
 
 console.log(numb.length);
+
+
+const nuoA = 0;
+const ikiA = 11;
+const daliklis1 = 3;
+const daliklis2 = 5;
+const daliklis3 = 7;
+let dalmuoA1 = 0;
+let dalmuoA2 = 0;
+let dalmuoA3 = 0;
+
+for (let i = 0; i <= 11; i++) {
+    
+    if (i % daliklis1 === 0) {
+        dalmuoA1++
+    }
+    if (i % daliklis2 === 0) {
+        dalmuoA2++
+    }
+    if (i % daliklis3 === 0) {
+        dalmuoA3++
+    }
+}
+
+// b. 8 - 31
+
+const nuoB = 8;
+const ikiB = 31;
+let dalmuoB1 = 0;
+let dalmuoB2 = 0;
+let dalmuoB3 = 0;
+
+for (let i = 8; i <= 31; i++) {
+    
+    if (i % daliklis1 === 0) {
+        dalmuoB1++
+    }
+    if (i % daliklis2 === 0) {
+        dalmuoB2++
+    }
+    if (i % daliklis3 === 0) {
+        dalmuoB3++
+    }
+}
+
+// c. -18 -18
+
+const nuoC = -18;
+const ikiC = 18;
+let dalmuoC1 = 0;
+let dalmuoC2 = 0;
+let dalmuoC3 = 0;
+
+for (let i = -18; i <= 18; i++) {
+    
+    if (i % daliklis1 === 0) {
+        dalmuoC1++
+    }
+    if (i % daliklis2 === 0) {
+        dalmuoC2++
+    }
+    if (i % daliklis3 === 0) {
+        dalmuoC3++
+    }
+}
+
+// d. rezultatą pateikti tokiu formatu:
+// i. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+// ii. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+// iii. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
+
+console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoA1} vienetai.`);
+console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoA2} vienetai.`);
+console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoA3} vienetai.`);
+console.log(`-------------------------------------------------------------------------------`);
+console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoB1} vienetai.`);
+console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoB2} vienetai.`);
+console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoB3} vienetai.`);
+console.log(`-------------------------------------------------------------------------------`);
+console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoC1} vienetai.`);
+console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoC2} vienetai.`);
+console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoC3} vienetai.`);
+
+
+
+
+
