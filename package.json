@@ -13,6 +13,7 @@
     "dev6": "nodemon ./js/06-operators.js",
     "dev7": "nodemon ./js/07-funkcion.js",
     "dev100": "nodemon ./js/100-homework.js",
+    "dev101": "nodemon ./js/101-hw-function.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

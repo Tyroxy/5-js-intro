@@ -448,22 +448,160 @@ console.log('------------------------------------------------');
 
 // 3.
 
+const tre = 3;
+const pen = 5;
+const sep = 7;
+
 // a. intervalas 0 - 11
 
+// is 3
+// 1) sprendimo var.
+const int1 = 0;
+const int2 = 11;
+let kiekis0 = [];
+let kiekis1 = [];
+let kiekis2 = [];
+let kiekis3 = [];
 
-const num1 = 0;
-const num2 = 11;
-let numb = [];
-
-if (num1 <= num2) {
-  for (let i = num1; i <= num2; i++) {
-    if (i % 3 === 0)
-      numb.push(i);
+if (int1 <= int2) {
+  for (let i = int1; i <= int2; i++) {
+    if (i % tre === 0)
+      kiekis0.push(i);
   }
 }
+console.log(kiekis0);
+console.log(kiekis0.length);
 
-console.log(numb.length);
+console.log('----------------------');
 
+// 2) sprendimo var.
+let kiek = 0;
+    for (let i = int1; i <= int2; i++) {
+
+      if (i % tre === 0) { // tre = 3
+          kiek++
+      } 
+    }
+    console.log(kiek);
+
+console.log('----------------------');
+
+// sprendimai:
+
+if (int1 <= int2) {
+    for (let i = int1; i <= int2; i++) {
+
+      if (i % tre === 0)  // tre = 3
+      kiekis1.push(i);
+      
+   
+      if (i % pen === 0)  // pen = 5
+      kiekis2.push(i);
+      
+      if (i % sep === 0)  // sep = 7
+      kiekis3.push(i);
+      }
+    }
+
+  console.log(kiekis1);
+  console.log(kiekis1.length);
+
+  console.log('--------------');
+
+  console.log(kiekis2);
+  console.log(kiekis2.length);
+
+  console.log('--------------');
+
+  console.log(kiekis3);
+  console.log(kiekis3.length);
+
+
+  console.log('----------------------');
+
+ // b. intervalas 8 - 31 
+
+const int3 = 8;
+const int4 = 31;
+
+let kiekis4 = [];
+let kiekis5 = [];
+let kiekis6 = [];
+
+if (int3 <= int4) {
+    for (let i = int3; i <= int4; i++) {
+
+      if (i % tre === 0)  // tre = 3
+      kiekis4.push(i);
+      
+   
+      if (i % pen === 0)  // pen = 5
+      kiekis5.push(i);
+      
+      if (i % sep === 0)  // sep = 7
+      kiekis6.push(i);
+      }
+    }
+
+  console.log(kiekis4);
+  console.log(kiekis4.length);
+
+  console.log('--------------');
+
+  console.log(kiekis5);
+  console.log(kiekis5.length);
+
+  console.log('--------------');
+
+  console.log(kiekis6);
+  console.log(kiekis6.length);
+
+
+  console.log('----------------------');
+
+
+
+// c. intervalas -18 - 18 
+
+const int5 = -18;
+const int6 = 18;
+
+let kiekis7 = [];
+let kiekis8 = [];
+let kiekis9 = [];
+
+if (int5 <= int6) {
+    for (let i = int5; i <= int6; i++) {
+
+      if (i % tre === 0)  // tre = 3
+      kiekis7.push(i);
+      
+   
+      if (i % pen === 0)  // pen = 5
+      kiekis8.push(i);
+      
+      if (i % sep === 0)  // sep = 7
+      kiekis9.push(i);
+      }
+    }
+
+  console.log(kiekis7);
+  console.log(kiekis7.length);
+
+  console.log('--------------');
+
+  console.log(kiekis8);
+  console.log(kiekis8.length);
+
+  console.log('--------------');
+
+  console.log(kiekis9);
+  console.log(kiekis9.length);
+
+
+  console.log('----------------------');
+
+/*  kitas sprendimas, randant tik galimu sprendiniu kiekius 
 
 const nuoA = 0;
 const ikiA = 11;
@@ -528,25 +666,27 @@ for (let i = -18; i <= 18; i++) {
         dalmuoC3++
     }
 }
+*/
+
 
 // d. rezultatą pateikti tokiu formatu:
 // i. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
 // ii. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
 // iii. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
 
-console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoA1} vienetai.`);
-console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoA2} vienetai.`);
-console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoA3} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int1} ir ${int2}, besidalijanciu be liekanos is ${tre} yra ${kiekis1.length} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int1} ir ${int2}, besidalijanciu be liekanos is ${pen} yra ${kiekis2.length} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int1} ir ${int2}, besidalijanciu be liekanos is ${sep} yra ${kiekis3.length} vienetai.`);
 console.log(`-------------------------------------------------------------------------------`);
-console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoB1} vienetai.`);
-console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoB2} vienetai.`);
-console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoB3} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int3} ir ${int4}, besidalijanciu be liekanos is ${tre} yra ${kiekis4.length} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int3} ir ${int4}, besidalijanciu be liekanos is ${pen} yra ${kiekis5.length} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int3} ir ${int4}, besidalijanciu be liekanos is ${sep} yra ${kiekis6.length} vienetai.`);
 console.log(`-------------------------------------------------------------------------------`);
-console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoC1} vienetai.`);
-console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoC2} vienetai.`);
-console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoC3} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int5} ir ${int6}, besidalijanciu be liekanos is ${tre} yra ${kiekis7.length} vienetu.`);
+console.log(`Skaiciu intervale tarp ${int5} ir ${int6}, besidalijanciu be liekanos is ${pen} yra ${kiekis8.length} vienetai.`);
+console.log(`Skaiciu intervale tarp ${int5} ir ${int6}, besidalijanciu be liekanos is ${sep} yra ${kiekis9.length} vienetai.`);
 
 
-
+console.log('------------------------------------------------------');
 
 
