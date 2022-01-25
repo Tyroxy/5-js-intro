@@ -13,6 +13,18 @@ Parašyti funkcijas, kurios atitinka pateiktus reikalavimus, jei įvykdo reikiam
       1. console.log( tusciaFunkcija() );
       2. rezultatas: false
 
+*/    
+
+function tusciaFunkcija() {
+    return false;
+}
+console.log(tusciaFunkcija());
+
+
+console.log('*******************************');
+
+
+/*
 
 2. Funkcija pavadinimu “daugyba”:
    1. priima du skaičiaus tipo kintamuosius
@@ -23,8 +35,34 @@ Parašyti funkcijas, kurios atitinka pateiktus reikalavimus, jei įvykdo reikiam
       2. console.log( daugyba( skaicius3, skaicius2 ) );
       3. console.log( daugyba( skaicius1, skaicius3 ) );
       4. rezultatas: teisingos reikšmės;
+*/
 
 
+function daugyba(a, b) {
+
+
+   if (typeof a === 'number') {
+      return 'teisingos reiksmes'
+   }
+   if (typeof a !== 'number') {
+      return 'neteisingos reiksmes'
+   }
+
+   const rez = a * b;
+   return rez; 
+
+}
+
+const a = -1;
+const b = 4;
+const c = 5;
+
+console.log(daugyba(a, b));
+console.log(daugyba(c, b));
+console.log(daugyba(a, c));
+
+
+/*
 3. Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
    1. priima vieną kintamąjį
    2. jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
@@ -117,6 +155,8 @@ Parašyti funkcijas, kurios atitinka pateiktus reikalavimus, jei įvykdo reikiam
       1. sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą
 
 */
+
+
 
 
 

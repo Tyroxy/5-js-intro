@@ -22,15 +22,31 @@ function max(list) {
 
     // let biggest = 0;
     // let biggest = -Infinity;
+    
     let biggest = list[0];
+
+    // for (let i = 1; i < list.length; i++) {
+    //     const n = list [i];
+    //     if (n > biggest) {
+    //         biggest = n; 
+    //     }
+    // }
+
+    // for (let i = 1; i < list.length; i++) {
+    //     const n = list [i];
+    //     if (typeof n === 'number' && n > biggest) {
+    //         biggest = n; 
+    //     }
+    // }
 
     for (let i = 1; i < list.length; i++) {
         const n = list [i];
-        if (n > biggest) {
+        if (typeof n === 'number' 
+        && isFinite(n) 
+        && n > biggest) {
             biggest = n; 
         }
     }
-
 
 
     // for (let i = 0; i < addListener.length; i++) {
@@ -49,6 +65,10 @@ function max(list) {
 // console.log(max(Infinity), '-->', 'ERROR')
 // console.log(max(-Infinity), '-->', 'ERROR')
 
+console.log(max('pomidoras'), '-->', 'ERROR');
+console.log(max([]), '-->', 'ERROR');
+console.log(max(Infinity), '-->', 'ERROR');
+console.log(max(NaN), '-->', 'ERROR');
 
 console.log(max([1]), '-->', 1);
 console.log(max([5]), '-->', 5);
@@ -56,14 +76,14 @@ console.log(max([1, 2, 3]), '-->', 3);
 console.log(max([-5, 78, 14, 0, 18]), '-->', 78);
 console.log(max([69, 69, 69, 69, 66]), '-->', 69);
 console.log(max([-1, -2, -3, -4, -5, -6, -7, -8]), '-->', -1);
-console.log(max('pomidoras'), '-->', 'ERROR');
-console.log(max([]), '-->', 'ERROR');
 
 console.log(max([1, true, 'labas', [], [5, 8], [''], ['a'], ['a', 'sdgf'], 2, 3]), '-->', 3);
+console.log(max([-1, NaN, -8, -2, -3]), '-->', -1);
+console.log(max([1, NaN, 8, 2, 3]), '-->', 8);
+console.log(max([1, Infinity, -Infinity, 8, 2, 3]), '-->', 8);
+console.log(max([1, NaN, Infinity, -Infinity, 8, 2, 3]), '-->', 8);
 
-
-
-console.log(max(), '-->', 'ERROR');
+// console.log(max(), '-->', 'ERROR');
 
 
 

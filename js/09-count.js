@@ -35,13 +35,9 @@ if (n % 1 !== 0) {
     // const numberAsString = '' + Math.abs(n);
     // const size = numberAsString.length;
 
-
     return size;
 
-
 }
-
-
 
 console.log(count(true), '-->', 'ERROR')
 console.log(count('asd'), '-->', 'ERROR')
