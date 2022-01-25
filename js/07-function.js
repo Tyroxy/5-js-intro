@@ -1,5 +1,5 @@
 /*
-funkcion - perpanaudojamo kodo blokas
+function - perpanaudojamo kodo blokas
 */
 
 /*
