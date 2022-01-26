@@ -8,9 +8,9 @@ function x(a) {
 
 */
 
-
-
-
+                        // function isRealNumber(num) {
+                        //     return typeof num === 'number' && isFinite(num);
+                        // }
 
 
 // function max() {
@@ -64,6 +64,9 @@ function max(list) {
     // for (let i = 1; i < list.length; i++) {
     for (let i = 0; i < list.length; i++) { 
         const n = list [i];
+                            // if (isRealNumber(n) && n > biggest) {
+                            //     biggest = n; 
+                            // }
         if (typeof n === 'number' 
         && isFinite(n) 
         && n > biggest) {
