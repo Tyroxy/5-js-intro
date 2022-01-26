@@ -49,3 +49,23 @@ function getPlanetName(id){
    }
 
    console.log('************************************************');
+
+
+//SpeedCode #2 - Array Madness
+
+  function arrayMadness(a, b) {
+
+    let sumA = 0;
+    for (let i = 0; i < a.length;  i++) {
+      sumA += a[i] * a[i];
+    }
+
+    let sumB = 0;
+    for (let i = 0; i < b.length;  i++) {
+        sumB += b[i] * b[i] * b[i];
+    }
+       
+    return sumA > sumB;
+  }
+
+  console.log('************************************************');
