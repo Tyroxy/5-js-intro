@@ -17,6 +17,8 @@
     "dev10": "nodemon ./js/10-max.js",
     "dev11": "nodemon ./js/11-objects.js",
     "dev12": "nodemon ./js/12-ternary.js",
+    "dev13": "nodemon ./js/13-array-object.js",
+    "dev14": "nodemon ./js/14-loops.js",
     "dev99": "nodemon ./js/99-codewars.js",
     "dev100": "nodemon ./js/100-homework.js",
     "dev101": "nodemon ./js/101-hw-function.js",
