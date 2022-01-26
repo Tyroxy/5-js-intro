@@ -106,13 +106,44 @@ console.log(`Person has ${person.children.length} children.`);
 console.log('************************');
 
 // Favorite color is color, color, color.
-let colors = '';
-for (let i = 0; i < person.favoriteColors.length; i++) {
+let colors = 'none';   //'(not sure)'
+if (person.favoriteColors.length) {
+colors = person.favoriteColors[0];
+for (let i = 1; i < person.favoriteColors.length; i++) {
     const color = person.favoriteColors[i];
-    console.log(color);
-    colors += color + ', ';
+    colors += ', ' + color;
+    }
 }
 
+// console.log('************************');
+
+// let colors = person.favoriteColors[0];
+// for (let i = 1; i < person.favoriteColors.length; i++) {
+//     const color = person.favoriteColors[i];
+//     colors += ', ' + color;
+// }
+
+// console.log('************************');
+
+// let colors = '';
+// for (let i = 0; i < person.favoriteColors.length; i++) {
+//     const color = person.favoriteColors[i];
+//     console.log(color);
+//     colors += color + ', ';
+// }
+
+// console.log('************************');
+
+// let colors = '';
+// for (let i = 0; i < person.favoriteColors.length; i++) {
+//     const color = person.favoriteColors[i];
+//     colors += color;
+//     if (i !== person.favoriteColors.length - 1) {
+//         colors += ', ';
+//     }
+// }
+
+// console.log('************************');
 
 // 1 budas atsikratyti ', ' - atimti 2 paskutinius ciklo elementus
 // let shortColors = '';
@@ -120,18 +151,20 @@ for (let i = 0; i < person.favoriteColors.length; i++) {
 // const symbol = colors[i];
 // shortColors += symbol;
 // }
-console.log('************************');
+// console.log('************************');
 
 // 2 budas atsikratyti ', ' - panaudoti slice.
 
-const shortColors = colors.slice(0, -2)
+// const shortColors = colors.slice(0, -2)
 
 
-// console.log(`Favorite color is ${colors}.`);
+console.log(`Favorite color is ${colors}.`);
 
-console.log(`Favorite color is ${shortColors}.`);
+// console.log(`Favorite color is ${shortColors}.`);
 
-
+console.log('************************');
 
 
 // DOB: yyyy-mm-dd.
+// console.log(`DOB: ${person['dob'].year}-${person['dob'].month}-${person['dob'].day}.`);
+console.log(`DOB: ${person.dob.year}-${person.dob.month}-${person.dob.day}.`);
