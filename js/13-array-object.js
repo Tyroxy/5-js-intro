@@ -117,3 +117,5 @@ console.log(point);
 const axis = 'z';  // 'x' , 'y' , 'z'
 const axisValue = point[axis];
 console.log(axis, axisValue);
+
+console.log('--------------------------------');
